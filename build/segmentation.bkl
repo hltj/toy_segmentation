@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<makefile>
+	<include file="presets/simple.bkl"/>
+	<exe id="phrase" template="simple">
+		<dirname>../bin</dirname>
+		<sources>../src/phrase.cpp</sources>
+		<sources>../src/phrasing.cpp</sources>
+		<headers>../src/phrasing.h</headers>
+		<sources>../src/comm/zh_ctype.cpp</sources>
+		<headers>../src/comm/zh_ctype.h</headers>
+		<sources>../src/comm/ucs4string_util.cpp</sources>
+		<headers>../src/comm/ucs4string_util.h</headers>
+		<sources>../src/comm/ucs4stream.cpp</sources>
+		<headers>../src/comm/ucs4stream.h</headers>
+		<headers>../src/comm/ucs4string.h</headers>
+		<headers>../src/comm/typedef.h</headers>
+	</exe>
+	<exe id="gen_dict" template="simple">
+		<dirname>../bin</dirname>
+		<sources>../src/gen_dict.cpp</sources>
+		<sources>../src/dict_gen.cpp</sources>
+		<headers>../src/dict_gen.h</headers>
+		<sources>../src/comm/ucs4string_util.cpp</sources>
+		<headers>../src/comm/ucs4string_util.h</headers>
+		<sources>../src/comm/ucs4stream.cpp</sources>
+		<headers>../src/comm/ucs4stream.h</headers>
+		<headers>../src/comm/ucs4string.h</headers>
+		<headers>../src/comm/typedef.h</headers>
+	</exe>
+	<exe id="segment" template="simple">
+		<dirname>../bin</dirname>
+		<sources>../src/segment.cpp</sources>
+		<sources>../src/segmentation.cpp</sources>
+		<headers>../src/segmentation.h</headers>
+		<sources>../src/comm/ucs4string_util.cpp</sources>
+		<headers>../src/comm/ucs4string_util.h</headers>
+		<sources>../src/comm/ucs4stream.cpp</sources>
+		<headers>../src/comm/ucs4stream.h</headers>
+		<headers>../src/comm/ucs4string.h</headers>
+		<headers>../src/comm/typedef.h</headers>
+	</exe>
+</makefile>
